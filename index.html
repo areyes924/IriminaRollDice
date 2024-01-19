@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="grid-container">
+
+
+
+
+        <!-- NAME -->
+        <div class="cell" id="name">
+            <h3>Alex Reyes</h3>
+        </div>
+
+
+
+
+        <!-- TITLE -->
+        <div class="cell" id="title">
+            <h3>Rolling Dice</h3>
+        </div>
+
+
+
+
+        <!-- FORM -->
+        <div class="cell" id = "form">
+            <button class="diceNum" onclick="setDiceNumber(1)">1</button>
+            <br>
+            <br>
+            <button class="diceNum" onclick="setDiceNumber(2)">2</button>
+            <br>
+            <br>
+            <button class="diceNum" onclick="setDiceNumber(3)">3</button>
+
+
+
+
+
+
+
+
+            <form name="myForm" action="" method="GET">
+                Times to Roll<br>
+                <input type="text" name="rollNumber" value="">
+                <input type="button" name="button" value="Submit" onClick="setTimesToRoll(this.form)">
+            </form>
+
+
+
+
+        </div>
+
+
+
+
+        <!-- DIE 1 -->
+        <div class = "cell dice">
+            <div id="die1"></div>
+        </div>
+
+
+
+
+        <!-- FREQUENCY TABLE -->
+        <div class = "cell table" id = "freqtable">
+           
+        </div>
+
+
+
+
+        <!-- DIE 2 -->
+        <div class = "cell dice">
+            <div id="die2"></div>
+        </div>
+
+
+
+
+        <!-- DOUBLES AND TRIPLES -->
+        <div class = "cell table" id = "repeattable">
+            <p id="double"></p>
+            <p id="triple"></p>
+        </div>
+
+
+
+
+        <!-- ROLL BUTTON -->
+        <div class = "cell" id = "buttongrid">
+            <button id="roll" onclick="roll()">ROLL</button>
+        </div>
+
+
+
+
+        <!-- DIE 3 -->
+        <div class = "cell dice">
+            <div id="die3"></div>
+        </div>
+
+
+
+
+        <!-- MEAN, MEDIAN, AND MODE. -->
+        <div class = "cell table" id = "stattable">
+            <p id="mean"></p>
+            <p id="median"></p>
+            <p id="mode"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

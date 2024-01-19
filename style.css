@@ -1,0 +1,113 @@
+/* GRID FORMATTING CSS  */
+
+body{
+    background-color: aliceblue;
+}
+
+#grid-container {
+    display: grid;
+    /* grid-gap: 8px; */
+    grid-template-columns: 15% 15% 70%;
+    grid-template-rows: 13% 29% 29% 29%;
+    height: 100vh; /* Set height to 100% of viewport height */
+}
+
+
+.cell {
+    padding: 2px;
+}
+
+
+.die{
+    grid-row: span 1;
+}
+
+#die1,#die2,#die3{
+    border: 7px solid black;
+    text-align: center;
+    padding: 55px;
+    margin: 30px;
+}
+
+
+#name {
+    background-color:black;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    color: white;
+    line-height: 0px;
+    height: 106px;
+}
+
+
+#title {
+    grid-column: span 2;
+    text-align: center;
+   
+    background-color: black;
+    font-size: 45px;
+    color: white;
+    line-height: 0px;
+    height: 106px;
+}
+
+
+#form {
+    grid-row: span 2;
+
+}
+
+
+
+#roll{
+    /* color: white; */
+    padding: 70px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+}
+
+#stattable{
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid rgb(255, 173, 173);
+
+}
+
+#repeattable{
+    text-align: center;
+    font-size: 45px;
+    border: 3px solid rgb(255, 173, 173);
+}
+
+.diceNum{
+    padding: 8px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+table{
+    width: 100%;
+}
+th {
+    border: 1px solid;
+    height: 70px;
+}
+td{
+    border: 1px solid;
+    text-align: center;
+    height: 70px;
+}
+
+
+td:hover {background-color: coral;}
+th:hover {background-color: coral;}
